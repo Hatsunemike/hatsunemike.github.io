@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>how-to-commit-a-send-nsfw-content-in-qq - hatmike-webpage</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="hatmike-webpage"><meta name="msapplication-TileImage" content="/img/web-icon.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="hatmike-webpage"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="如何优雅地在qq群聊中发涩图吞消息检测当你的消息（任何消息都算，包括涩图）发不出来、被吞时，可以用以下两种方式判断：  文件无法上传，错误代码-143 （较少见）  这种就是被藤子审核第一层就给拦下来了，它会立即提醒你发送失败。 我们常见的红色感叹号： 就是指这种情况。  （仅限手机） 长按该图片消息，无法回复&amp;#x2F;引用。（用得最多）  这是目前最标准的检测方式，原理是消息通过了藤子的第一道"><meta property="og:type" content="blog"><meta property="og:title" content="how-to-commit-a-send-nsfw-content-in-qq"><meta property="og:url" content="https://hatsunemike.github.io/2025/04/27/how-to-commit-a-send-nsfw-content-in-qq/"><meta property="og:site_name" content="hatmike-webpage"><meta property="og:description" content="如何优雅地在qq群聊中发涩图吞消息检测当你的消息（任何消息都算，包括涩图）发不出来、被吞时，可以用以下两种方式判断：  文件无法上传，错误代码-143 （较少见）  这种就是被藤子审核第一层就给拦下来了，它会立即提醒你发送失败。 我们常见的红色感叹号： 就是指这种情况。  （仅限手机） 长按该图片消息，无法回复&amp;#x2F;引用。（用得最多）  这是目前最标准的检测方式，原理是消息通过了藤子的第一道"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://hatsunemike.github.io/pics/%E5%8F%91%E9%80%81%E5%A4%B1%E8%B4%A5.png"><meta property="og:image" content="https://hatsunemike.github.io/pics/%E6%B6%A9%E5%9B%BE%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95.jpg"><meta property="og:image" content="https://hatsunemike.github.io/pics/%E6%B6%A9%E5%9B%BE%E5%BC%95%E7%94%A8%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95.jpg"><meta property="article:published_time" content="2025-04-27T09:14:53.000Z"><meta property="article:modified_time" content="2025-12-05T12:00:18.545Z"><meta property="article:author" content="Hatsune Mike"><meta property="article:tag" content="杂项"><meta property="article:tag" content="逃逸攻击"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://hatsunemike.github.io/pics/%E5%8F%91%E9%80%81%E5%A4%B1%E8%B4%A5.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://hatsunemike.github.io/2025/04/27/how-to-commit-a-send-nsfw-content-in-qq/"},"headline":"how-to-commit-a-send-nsfw-content-in-qq","image":["https://hatsunemike.github.io/pics/%E5%8F%91%E9%80%81%E5%A4%B1%E8%B4%A5.png","https://hatsunemike.github.io/pics/%E6%B6%A9%E5%9B%BE%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95.jpg","https://hatsunemike.github.io/pics/%E6%B6%A9%E5%9B%BE%E5%BC%95%E7%94%A8%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95.jpg"],"datePublished":"2025-04-27T09:14:53.000Z","dateModified":"2025-12-05T12:00:18.545Z","author":{"@type":"Person","name":"Hatsune Mike"},"publisher":{"@type":"Organization","name":"hatmike-webpage","logo":{"@type":"ImageObject","url":"https://hatsunemike.github.io/img/web-logo.png"}},"description":"如何优雅地在qq群聊中发涩图吞消息检测当你的消息（任何消息都算，包括涩图）发不出来、被吞时，可以用以下两种方式判断：  文件无法上传，错误代码-143 （较少见）  这种就是被藤子审核第一层就给拦下来了，它会立即提醒你发送失败。 我们常见的红色感叹号： 就是指这种情况。  （仅限手机） 长按该图片消息，无法回复&#x2F;引用。（用得最多）  这是目前最标准的检测方式，原理是消息通过了藤子的第一道"}</script><link rel="canonical" href="https://hatsunemike.github.io/2025/04/27/how-to-commit-a-send-nsfw-content-in-qq/"><link rel="icon" href="/img/web-icon.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/web-logo.png" alt="hatmike-webpage" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-04-27T09:14:53.000Z" title="4/27/2025, 9:14:53 AM">2025-04-27</time>发表</span><span class="level-item"><time dateTime="2025-12-05T12:00:18.545Z" title="12/5/2025, 12:00:18 PM">2025-12-05</time>更新</span><span class="level-item">9 分钟读完 (大约1296个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">how-to-commit-a-send-nsfw-content-in-qq</h1><div class="content"><h1 id="如何优雅地在qq群聊中发涩图"><a href="#如何优雅地在qq群聊中发涩图" class="headerlink" title="如何优雅地在qq群聊中发涩图"></a>如何优雅地在qq群聊中发涩图</h1><h2 id="吞消息检测"><a href="#吞消息检测" class="headerlink" title="吞消息检测"></a>吞消息检测</h2><p>当你的消息（任何消息都算，包括涩图）发不出来、被吞时，可以用以下两种方式判断：</p>
+<ol>
+<li><p><strong>文件无法上传，错误代码-143 （较少见）</strong><br>  这种就是被藤子审核第一层就给拦下来了，它会立即提醒你发送失败。<br> 我们常见的红色感叹号：<img src="/../pics/%E5%8F%91%E9%80%81%E5%A4%B1%E8%B4%A5.png"> 就是指这种情况。</p>
+</li>
+<li><p><strong>（仅限手机） 长按该图片消息，无法回复&#x2F;引用。（用得最多）</strong><br>  这是目前最标准的检测方式，原理是消息通过了藤子的第一道审核，但是没有过第二道审核时，就会是这个状态。<br>藤子的第二道审核原理其实也很简单，基本可以确定是一种hash+视觉模型识别的混合算法，其中视觉模型识别较慢，会在你图片成功发出不久后给你和谐掉。<br>其中违规内容hash表目前推测会定期从<del>pixiv、fantia、EHentai等</del>公开插画网站上搜集r18插画并更新，从而导致很多著名下海画师（如<code>ほうき星</code>、<code>儒宅</code>、<code>YENI</code>、<code>Kacyu|卡丘</code>等）的最新r18插画无法不做处理直接发出。<br>视觉识别模型目前推测是一种上亿参数的模型，因此审核时间长（但是一般肯定会审一遍，你可以相信藤子的算力资源量）。</p>
+</li>
+</ol>
+<h2 id="绕开审核"><a href="#绕开审核" class="headerlink" title="绕开审核"></a>绕开审核</h2><p>目前来看，这个识别模型是没办法绕开的，基本就是涩图发不出来、发出来的不涩，跟你人脑识别结果差不多了，你觉得过不了审的一般它都会和谐，只不过它比较慢，你发的涩图可以活个几分钟，几分钟后还是得没。</p>
+<p>hash表因为模型简单，可以用以下几种方式绕开：</p>
+<ol>
+<li><strong>修改涩图像素。</strong><br>  这是<strong>最常用、最保真、最简单的方式</strong>，原理是更改图片的细节像素，从而改变图片的hash值或一些特征绕过审核。<br> 但是这招也很容易失灵，倒不是因为这招不好用，而是要用好。<br> （当然，如果你具有计算机视觉、图像识别的实战经验，相信这难不倒你）<br> 比如，图片hash可能会首先把图片像素进行归一化处理，所以图片缩放、调整亮度、对比度、饱和度可能是不太好使的；<br> 通过修改图片格式（<code>.jpg, .png, .jpeg, .webp, ...</code>）等也是不好使的。<br> 进行图片的裁剪、图片小部分像素的修改是可以的，进行图片的旋转、镜像、拓宽等也是可以的。</li>
+<li><strong>转发聊天记录</strong><br> 藤子的审核是不管单独聊天的，所以你可以发给你的hxd、你的小号等，然后转为聊天记录发出来。<blockquote>
+<p>需要注意的是，<strong>聊天记录也是会被吞的</strong>，如果聊天记录被吞，就需要将对每个涩图消息发一条回复&#x2F;引用消息，然后用这个引用消息来代替原来被吞的聊天记录中的涩图消息。具体操作就像这样：<br>原聊天记录：<img src="/../pics/%E6%B6%A9%E5%9B%BE%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95.jpg"><br>修改后聊天记录：<img src="/../pics/%E6%B6%A9%E5%9B%BE%E5%BC%95%E7%94%A8%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95.jpg"></p>
+</blockquote>
+</li>
+</ol>
+<p>接下来的就是比较强的绕开方式，但是直观性很差，只能保证你的涩图能共享，不保证能直接看：</p>
+<ol>
+<li><strong>发链接</strong><br>这招不仅对涩图管用，对视频、轻小说等所有nsfw内容都管用。<br>  需要注意链接的时效性，百度网盘是出了名的审查严格、秋后算账，其他如蓝奏云、夸克、迅雷云盘（注意，仅限云盘）等都可以<br>  与之相比，磁链（一种基于BitTorrent协议的文件共享链接）就有较长的生命周期，但是速度慢。注意，<strong>不要用迅雷下载磁链资源</strong>。</li>
+<li><strong>加密（压缩包等）</strong><br>  需要注意，压缩包要有密码，不然也绕不开，可以把用移位密码加密的密码写到文件名里面。</li>
+<li><strong>图片隐写</strong></li>
+</ol>
+<p>你可以发一个打了码的<code>.png</code>格式图片，然后把它的完整版附到后面。<br>制作隐写很简单，<code>windows</code>下使用</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">copy</span> /B file1+file2 new_file</span><br></pre></td></tr></table></figure>
+
+<p>就可以在<code>file1</code>的后面加上<code>file2</code>，并放到<code>new_file</code>中。<code>linux</code>下使用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> file1 file2 &gt; new_file</span><br></pre></td></tr></table></figure>
+
+<p>读取就会稍显麻烦点，因为要利用<code>.png</code>的格式来判断<code>file1</code>的终点：<a target="_blank" rel="noopener" href="https://github.com/Hatsunemike/LearningPython/blob/main/read_implicit_png.py">读取隐写内容的python代码</a></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>how-to-commit-a-send-nsfw-content-in-qq</p><p><a href="https://hatsunemike.github.io/2025/04/27/how-to-commit-a-send-nsfw-content-in-qq/">https://hatsunemike.github.io/2025/04/27/how-to-commit-a-send-nsfw-content-in-qq/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Hatsune Mike</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2025-04-27</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2025-12-05</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%9D%82%E9%A1%B9/">杂项</a><a class="link-muted mr-2" rel="tag" href="/tags/%E9%80%83%E9%80%B8%E6%94%BB%E5%87%BB/">逃逸攻击</a></div><div class="notification is-danger">You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.</div></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" href="/" target="_blank" rel="noopener" data-type="afdian"><span class="icon is-small"><i class="fas fa-charging-station"></i></span><span>爱发电</span></a><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="/" alt="支付宝"></span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>送我杯咖啡</span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="patreon"><span class="icon is-small"><i class="fab fa-patreon"></i></span><span>Patreon</span></a><div class="notification is-danger">You forgot to set the <code>business</code> or <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.</div><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2025/11/14/a-normal-story/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">一个平常的故事</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2025/04/02/some-usual-mistakes-when-using-hexo-markdown/"><span class="level-item">some usual mistakes when using hexo markdown.</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card" id="comments"><div class="card-content"><h3 class="title is-5">评论</h3><div class="notification is-danger">You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.</div></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget is-sticky" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#如何优雅地在qq群聊中发涩图"><span class="level-left"><span class="level-item">如何优雅地在qq群聊中发涩图</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#吞消息检测"><span class="level-left"><span class="level-item">吞消息检测</span></span></a></li><li><a class="level is-mobile" href="#绕开审核"><span class="level-left"><span class="level-item">绕开审核</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/web-logo.png" alt="hatmike-webpage" height="28"></a><p class="is-size-7"><span>&copy; 2025 Hatsune Mike</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/javascript" id="MathJax-script" async>MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      },
+      chtml: {
+        matchFontHeight: false
+      }
+    };</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

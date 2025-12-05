@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>标签: 基础概率 - hatmike-webpage</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="hatmike-webpage"><meta name="msapplication-TileImage" content="/img/web-icon.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="hatmike-webpage"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Welcome!this is hatmike blog. There will be a bunch of technical article casually updated."><meta property="og:type" content="blog"><meta property="og:title" content="hatmike-webpage"><meta property="og:url" content="https://hatsunemike.github.io/"><meta property="og:site_name" content="hatmike-webpage"><meta property="og:description" content="Welcome!this is hatmike blog. There will be a bunch of technical article casually updated."><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://hatsunemike.github.io/img/og_image.png"><meta property="article:author" content="Hatsune Mike"><meta property="article:tag" content="Technique, blog"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://hatsunemike.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://hatsunemike.github.io"},"headline":"hatmike-webpage","image":["https://hatsunemike.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Hatsune Mike"},"publisher":{"@type":"Organization","name":"hatmike-webpage","logo":{"@type":"ImageObject","url":"https://hatsunemike.github.io/img/web-logo.png"}},"description":"Welcome!this is hatmike blog. There will be a bunch of technical article casually updated."}</script><link rel="icon" href="/img/web-icon.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/web-logo.png" alt="hatmike-webpage" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags/">标签</a></li><li class="is-active"><a href="#" aria-current="page">基础概率</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-03-30T13:33:53.000Z" title="3/30/2025, 1:33:53 PM">2025-03-30</time>发表</span><span class="level-item"><time dateTime="2025-12-05T12:00:18.545Z" title="12/5/2025, 12:00:18 PM">2025-12-05</time>更新</span><span class="level-item">12 分钟读完 (大约1798个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/03/30/how-to-gain-70-5-star-objects-before-2-year-commemoration-of-HSR/">how to gain 70 5-star objects before 2-year commemoration of HSR.</a></p><div class="content"><h1 id="论从开服到“星穹贺礼”活动结束，大概需要氪多少钱才能有70个金"><a href="#论从开服到“星穹贺礼”活动结束，大概需要氪多少钱才能有70个金" class="headerlink" title="论从开服到“星穹贺礼”活动结束，大概需要氪多少钱才能有70个金"></a>论从开服到“星穹贺礼”活动结束，大概需要氪多少钱才能有70个金</h1><h2 id="p1-计算方法"><a href="#p1-计算方法" class="headerlink" title="p1. 计算方法"></a>p1. 计算方法</h2><p>众所周知，氪金是为了抽卡，所以我们只考虑<strong>抽卡氪金</strong>。</p>
+<p>那么有两个方向来降低氪金数额，一种是减少总抽数，一种是尽可能采用高性价比的抽卡资源购买方式。</p>
+<p>第一种方向，理论上讲总抽数可以减少到69抽（一抽一个金，外加送的真理医生），但是这种概率不到${10^{-6}}$，因此不加限制的理论最小值在这里毫无意义。考虑到大数定律以及中心极限定理，我们直接用光锥期望代替，将总抽数固定下来。</p>
+<p>第二种方向，在总抽数固定下来后，我们只考虑如何用最少的钱换取最多的票。那么显然，通票是会算进来的，全图鉴是假设成立的，游玩的时间是不计的，操作的繁琐是忽略的——我们会算入所有可免费获取票，然后，根据票数与价格的比例，我们将所有充值行为分为若干档，从最低档开始充值，如果最低档充不了了（比如月卡最多只能买731天），就会买下一档，以此类推，直到票数达到总抽数。****</p>
+<h2 id="0-结论（大伙想看的）"><a href="#0-结论（大伙想看的）" class="headerlink" title="0.结论（大伙想看的）"></a>0.结论（大伙想看的）</h2><table>
+<thead>
+<tr>
+<th>种类</th>
+<th>抽数</th>
+<th>花费</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>白嫖</td>
+<td>$2336.94$</td>
+<td>$¥0$</td>
+</tr>
+<tr>
+<td>小月卡</td>
+<td>$458$</td>
+<td>$¥750$</td>
+</tr>
+<tr>
+<td>首充</td>
+<td>$490.5$</td>
+<td>$¥3924$</td>
+</tr>
+<tr>
+<td>大月卡（¥128）</td>
+<td>$243$</td>
+<td>$¥2304$</td>
+</tr>
+<tr>
+<td>普通648</td>
+<td>$606$</td>
+<td>$¥7776$</td>
+</tr>
+<tr>
+<td><strong>总计</strong></td>
+<td>$\textbf{4134.44}$（所需：$4105$）</td>
+<td>$¥\textbf{14454}$</td>
+</tr>
+</tbody></table>
+<p>也就是说，你从开服那天开始玩，在榨干所有游戏内可获取抽卡资源，薅光各大平台的免费签到、网页小活动，全勤大小月卡，清光3次首充之后，再充12个648，就可以拿到这次的星穹贺礼。总计大概<del>只需要</del>$14454$元。</p>
+<h2 id="1-总抽数（账号上70金，要抽多少抽）"><a href="#1-总抽数（账号上70金，要抽多少抽）" class="headerlink" title="1. 总抽数（账号上70金，要抽多少抽）"></a>1. 总抽数（账号上70金，要抽多少抽）</h2><p>根据b站up主<code>一颗平衡树</code>的<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nt421w7FE">《用1500万抽暴力破解星穹铁道抽卡系统》</a>$^{[1]}$公布的——我称之为——基础概率递增的抽卡模型，我做了如下研究：</p>
+<h3 id="1-0-期望公示（看不懂的看这个就行）"><a href="#1-0-期望公示（看不懂的看这个就行）" class="headerlink" title="1.0 期望公示（看不懂的看这个就行）"></a>1.0 期望公示（看不懂的看这个就行）</h3><table>
+<thead>
+<tr>
+<th>种类</th>
+<th>期望</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>五星角色</td>
+<td>$62.30$</td>
+</tr>
+<tr>
+<td>限定五星角色</td>
+<td>$89.46$</td>
+</tr>
+<tr>
+<td>五星光锥</td>
+<td>$\textbf{53.41}$</td>
+</tr>
+<tr>
+<td>限定五星光锥</td>
+<td>65.11</td>
+</tr>
+</tbody></table>
+<h3 id="1-1-模型建立"><a href="#1-1-模型建立" class="headerlink" title="1.1 模型建立"></a>1.1 模型建立</h3><p>根据视频所言，星穹铁道的卡池可以简化为如下模型：</p>
+<blockquote>
+<p>玩家每次抽卡，其抽卡结果可以看做一个随机变量$X$，服从<code>0/1分布</code>，即$X \sim B(1, p)$。</p>
+<table>
+<thead>
+<tr>
+<th>取值</th>
+<th>$0$</th>
+<th>$1$</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>概率</td>
+<td>$p$</td>
+<td>$1-p$</td>
+</tr>
+</tbody></table>
+<p>考虑一直抽一直抽，直到抽出金所需的抽数$Y$，很明显，$Y$也是个随机变量。<br>若$p$不变，那么$Y$的服从离散型指数分布：<br>$$ P(Y&#x3D;k) &#x3D; (1-p)^{k-1}p, k \in N_+ $$<br>考虑前缀和，即$P(Y \leq k)$，则：<br>$$ P(Y \leq k) &#x3D; \sum \limits_{j&#x3D;1}^{k}P(Y&#x3D;j)$$<br>取$p&#x3D;0.016$（角色池五星公示概率），画出来长这样：<br><img src="/../pics/Distribution_PreSumY.png"><br>可以看到，此时仍会有$23.4%$的玩家无法在90抽内出金，于是加入了<strong>保底</strong>机制，实现方式为从<strong>第某抽开始，基础概率$p$随着抽数的增加而增加，并确保在保底抽数之前增长到$1$。</strong><br>$$ p &#x3D; p(i) &#x3D; \begin{cases}<br>p_0, &amp; i &lt; s \\<br>\min ( p_0 + ( i-s ) \times a, 1), &amp; i \geq s<br>\end{cases} $$<br>代入<code>一棵平衡树</code>所示的参数，就有如下分布：<br><img src="/../pics/%E5%8D%A1%E6%B1%A0%E6%A8%A1%E5%9E%8B%E8%A7%A3%E6%9E%90.png"><br>期望结果与<code>一棵平衡树</code>算出的结果相同，此处略。</p>
+</blockquote>
+<h2 id="1-2-70总抽数估计"><a href="#1-2-70总抽数估计" class="headerlink" title="1.2 70总抽数估计"></a>1.2 70总抽数估计</h2><p>由于<code>真理医生</code>被赠送，所以我们只需要抽69金。在拥有以上概率模型之后，我们就好办了。</p>
+<p>我们考虑抽N抽出69金的概率分布：</p>
+<p><img src="/../pics/69%E9%87%91%E5%88%86%E5%B8%83.png"></p>
+<p>为了保证普适性，想抽69金出来，在角色池或者常驻池需要抽$4744$抽，在光锥池需要抽$4105$抽。</p>
+<p>很明显的，<strong>我们all in光锥池，所需抽数最少</strong>。于是总抽数便定为$\textbf{4105}$抽。</p>
+<h2 id="2-抽卡价位"><a href="#2-抽卡价位" class="headerlink" title="2. 抽卡价位"></a>2. 抽卡价位</h2><p>可获取的抽卡资源，价位从低到高排序：</p>
+<table>
+<thead>
+<tr>
+<th>种类</th>
+<th>价位（¥&#x2F;抽）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>白嫖</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>小月卡</td>
+<td>$1.6$</td>
+</tr>
+<tr>
+<td>首充（6~648各档位）</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>大月卡（¥68基础档）</td>
+<td>$8.5$</td>
+</tr>
+<tr>
+<td>大月卡（¥128档溢出单价）</td>
+<td>$10.91$</td>
+</tr>
+<tr>
+<td><strong>648</strong></td>
+<td>$\textbf{12.83}$</td>
+</tr>
+<tr>
+<td>328</td>
+<td>$13.53$</td>
+</tr>
+<tr>
+<td>198</td>
+<td>$14.14$</td>
+</tr>
+<tr>
+<td>98</td>
+<td>$14.39$</td>
+</tr>
+<tr>
+<td>30</td>
+<td>$14.54$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$16$</td>
+</tr>
+</tbody></table>
+<p>成本最低原则，我们只考虑前5档：<strong>白嫖、小月卡、首充、大月卡、普通648</strong>。</p>
+<h3 id="2-1-白嫖"><a href="#2-1-白嫖" class="headerlink" title="2.1 白嫖"></a>2.1 白嫖</h3><p>这里简化了一下计算，引用了<code>孤胆飞客</code>的文档<a target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DYkdxZWlnRHhZY3l5?tab=BB08J2">《星琼铁道抽卡资源——孤单飞客》</a>$^{[2]}$（数据采集时间2025.3.30）：</p>
+<p><img src="/../pics/%E5%AD%A4%E8%83%86%E9%A3%9E%E5%AE%A2%E7%99%BD%E5%AB%96%E8%A1%A8-%E6%80%BB%E8%A1%A8.png"></p>
+<p><img src="/../pics/%E5%AD%A4%E8%83%86%E9%A3%9E%E5%AE%A2%E7%99%BD%E5%AB%96%E8%A1%A8-%E9%80%9A%E7%A5%A8.png"></p>
+<p>专票1785.94，通票551。</p>
+<p><strong>为了简化计算，这里直接把通票拿去抽光锥池。</strong></p>
+<p>共计$\textbf{2336.94}$抽。</p>
+<h3 id="2-2-小月卡"><a href="#2-2-小月卡" class="headerlink" title="2.2 小月卡"></a>2.2 小月卡</h3><p>崩铁开服时间为<strong>2023年4月26日</strong>，该活动截止日期为2025年4月26日，中间相差2年，天数$365 \times 2 +1 &#x3D; 731$天，小月卡24张完整的，1张只领了11天的。</p>
+<p>合计$ (3000 \times 24+11 \times 90+300) \div 160 &#x3D; \textbf{458}$抽，合计$30 \times 25 &#x3D; \textbf{750} $元。</p>
+<h3 id="2-2-首充"><a href="#2-2-首充" class="headerlink" title="2.2 首充"></a>2.2 首充</h3><p>一次首充，$6+30+98+198+328+648&#x3D;1308$元，对应$163.5$抽。</p>
+<p>总共3次首充（3.2开服还会重置一次），共$\textbf{490.5}$抽，花费$¥\textbf{3924}$。</p>
+<h3 id="2-3-大月卡（¥128档）"><a href="#2-3-大月卡（¥128档）" class="headerlink" title="2.3 大月卡（¥128档）"></a>2.3 大月卡（¥128档）</h3><p>一张大月卡，总计8张专票，880星琼，合计$13.5$抽。</p>
+<p>截止<strong>2025年4月26日</strong>，崩铁历经18版本（1.0 7个版本，2.0 8个版本，3.0 3个版本）。</p>
+<p>故大月卡抽数为$13.5 \times 18 &#x3D; \textbf{243}$抽，花费$18 \times 128&#x3D;¥\textbf{2304}$。</p>
+<h3 id="2-4-普通648"><a href="#2-4-普通648" class="headerlink" title="2.4 普通648"></a>2.4 普通648</h3><p>这里还差$576.56$抽，我们直接充12个648（一个648是50.5抽）。</p>
+<p>普通648抽数$50.5 \times 12 &#x3D; \textbf{606}$抽，花费$¥\textbf{7776}$。</p>
+<h3 id="2-5-抽卡总数分析"><a href="#2-5-抽卡总数分析" class="headerlink" title="2.5 抽卡总数分析"></a>2.5 抽卡总数分析</h3><table>
+<thead>
+<tr>
+<th>种类</th>
+<th>抽数</th>
+<th>花费</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>白嫖</td>
+<td>$2336.94$</td>
+<td>$¥0$</td>
+</tr>
+<tr>
+<td>小月卡</td>
+<td>$458$</td>
+<td>$¥750$</td>
+</tr>
+<tr>
+<td>首充</td>
+<td>$490.5$</td>
+<td>$¥3924$</td>
+</tr>
+<tr>
+<td>大月卡（¥128）</td>
+<td>$243$</td>
+<td>$¥2304$</td>
+</tr>
+<tr>
+<td>普通648</td>
+<td>$606$</td>
+<td>$¥7776$</td>
+</tr>
+<tr>
+<td><strong>总计</strong></td>
+<td>$\textbf{4134.44}$（所需：$4105$）</td>
+<td>$¥\textbf{14454}$</td>
+</tr>
+</tbody></table>
+<h2 id="3-这个结果其实算高了"><a href="#3-这个结果其实算高了" class="headerlink" title="3. 这个结果其实算高了"></a>3. 这个结果其实算高了</h2><p>因为我忽略了一个很重要的东西：<strong>星芒</strong>。星芒满600个，可以在商店兑换一个金（比换票划算）。</p>
+<p>这个是一个非常大的五星来源，但是这里直接给它忽略了，导致我们在最贵的一档那里买了将近$15 \%$的抽卡资源，却花了近一半的钱。也就是说哪怕星芒只会节省10%的抽数，我们都可以砍$25 \%$的总花费。</p>
+<p>但是这样的话这个blog更难写了，以后再说吧。</p>
+<h2 id="4-参考文献"><a href="#4-参考文献" class="headerlink" title="4. 参考文献"></a>4. 参考文献</h2><p>[1] 一颗平衡树. <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nt421w7FE">用1500万抽暴力破解星穹铁道抽卡系统</a>[OL].哔哩哔哩</p>
+<p>[2] 孤胆飞客. <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Wu4y1M75a">星穹铁道抽卡福利有多少？每版本能抽几个五星？1.0~1.5星琼统计</a>[OL].哔哩哔哩</p>
+<p>[3] 孤胆飞客. <a target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DYkdxZWlnRHhZY3l5?tab=BB08J2">星穹铁道抽卡资源统计表</a>[OL]. 腾讯文档</p>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/custom_avatar.jpg" alt="Hatsune Mike"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Hatsune Mike</p><p class="is-size-6 is-block">这是什么？好可爱，抓一下~</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>地球-中国</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives/"><p class="title">5</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories/"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags/"><p class="title">8</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/Hatsunemike" target="_blank" rel="me noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/Hatsunemike"><i class="fab fa-github"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-12-05T12:00:18.545Z">2025-12-05</time></p><p class="title"><a href="/2025/12/05/hello-world/">Hello World</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-11-14T16:00:00.000Z">2025-11-15</time></p><p class="title"><a href="/2025/11/14/a-normal-story/">一个平常的故事</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-04-27T09:14:53.000Z">2025-04-27</time></p><p class="title"><a href="/2025/04/27/how-to-commit-a-send-nsfw-content-in-qq/">how-to-commit-a-send-nsfw-content-in-qq</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-04-02T04:53:27.000Z">2025-04-02</time></p><p class="title"><a href="/2025/04/02/some-usual-mistakes-when-using-hexo-markdown/">some usual mistakes when using hexo markdown.</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-03-30T13:33:53.000Z">2025-03-30</time></p><p class="title"><a href="/2025/03/30/how-to-gain-70-5-star-objects-before-2-year-commemoration-of-HSR/">how to gain 70 5-star objects before 2-year commemoration of HSR.</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2025/12/"><span class="level-start"><span class="level-item">十二月 2025</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/11/"><span class="level-start"><span class="level-item">十一月 2025</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/04/"><span class="level-start"><span class="level-item">四月 2025</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/03/"><span class="level-start"><span class="level-item">三月 2025</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/FAQ/"><span class="tag">FAQ</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo/"><span class="tag">hexo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/markdown/"><span class="tag">markdown</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%9F%BA%E7%A1%80%E6%A6%82%E7%8E%87/"><span class="tag">基础概率</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%95%85%E4%BA%8B/"><span class="tag">故事</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%9D%82%E9%A1%B9/"><span class="tag">杂项</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B8%B8%E6%88%8F%E7%90%86%E8%A7%A3/"><span class="tag">游戏理解</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%80%83%E9%80%B8%E6%94%BB%E5%87%BB/"><span class="tag">逃逸攻击</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/web-logo.png" alt="hatmike-webpage" height="28"></a><p class="is-size-7"><span>&copy; 2025 Hatsune Mike</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/javascript" id="MathJax-script" async>MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      },
+      chtml: {
+        matchFontHeight: false
+      }
+    };</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
